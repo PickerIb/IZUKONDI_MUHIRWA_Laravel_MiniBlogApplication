@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\UserSubscribed;
 use App\Mail\WelcomeMail;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -22,7 +23,7 @@ class PostController extends Controller implements HasMiddleware
         return [
             
             // new Middleware('auth', only: ['store']),
-            new Middleware('auth', except: ['index,show']),
+            new Middleware(['auth','verified'], except: ['index,show']),
         ];
     }
     /**
@@ -30,7 +31,6 @@ class PostController extends Controller implements HasMiddleware
      */
     public function index()
     {
-
 
       
    $posts = Post::latest()->paginate(6); //Shortcut ways that can be used to fetch all posts from the database desc 
@@ -62,7 +62,7 @@ class PostController extends Controller implements HasMiddleware
         $fields=$request->validate([
         'title'=>['required','max:255'],
         'body'=>['required'],
-        'image'=>['nullable','file','max:3000','mimes:png,jpg,webp']
+        'image,'=>['nullable','file','max:3000','mimes:png,jpg,webp']
 
         ]);
 
