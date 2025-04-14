@@ -33,4 +33,7 @@
     .username {
         @apply py-2 pl-4 border-b border-slate-200 text-xs text-slate-700;
     }
+    a{
+      @apply text-sm text-blue-500;
+    }
 }

@@ -1,5 +1,13 @@
 <x-layout>
-    <h1 class="title">Welcome Back</h1>
+    <h1 class="title">Login to your account</h1>
+
+        {{-- Session Messages   --}}
+
+        @if(session('status'))
+
+        <x-flashMsg  msg="{{session('status')}}" />
+    
+        @endif
 
 
     <div class="mx-auto max-w-screen-sm  card">
@@ -36,9 +44,14 @@
         
         {{-- Remember Checkbox --}}
 
-        <div class="mb-4">
+        <div class="mb-4 flex justify-between items-center">
+           <div>
+
             <input type="checkbox" name="remember" id="remember">
             <label for="remember">Remember me</label>
+
+           </div>
+            <a class="text-blue" href="{{ route('password.request')}}">Forgot your password?</a>
 
             @error('failed')
             <p class="error">{{$message}}</p>
