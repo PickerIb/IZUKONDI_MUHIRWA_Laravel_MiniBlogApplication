@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5bab061a95f34822df14fcd0f37316caea01da83
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -70,6 +73,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # IZUKONDI_MUHIRWA_Laravel_MiniBlogApplication
 This Laravel Mini  Blog Application for IZUKONDI and MUHIRWA 
 >>>>>>> 4bffb2a5d0f89bd05ca3a77ae69b980702901df5
+<<<<<<< HEAD
 =======
 # IZUKONDI_MUHIRWA_Laravel_MiniBlogApplication
 This Laravel Mini  Blog Application for IZUKONDI and MUHIRWA 
@@ -142,3 +146,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 >>>>>>> 37c7f02 (initial commit)
 >>>>>>> 9373853c7b8a994097fe0624d4952afe4f2629e0
+=======
+>>>>>>> 5bab061a95f34822df14fcd0f37316caea01da83
