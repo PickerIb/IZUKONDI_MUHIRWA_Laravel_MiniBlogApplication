@@ -12,6 +12,8 @@ use Illuminate\Support\Str;
 class ResetPasswordController extends Controller
 {
 
+    #app part
+
 
     public  function passwordEmail(Request $request)
     {
